@@ -80,3 +80,10 @@ section {
   padding-top: 8px;
   margin: auto;
 }
+
+.nav-menu {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
