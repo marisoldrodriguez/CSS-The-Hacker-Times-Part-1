@@ -72,7 +72,8 @@ p {
 }
 
 section {
-  display: inline-block;
+  /* Inline-block was from Part 1 of the activity. Commented out to accomplish CSS Grid below. */
+  /* display: inline-block; */
   text-align: justify;
   width: 315px;
   padding-left: 15px;
@@ -81,9 +82,32 @@ section {
   margin: auto;
 }
 
+/* CSS Grid for the articles section. */
+.more-articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+article {
+  grid-column: 1 / -1;
+  justify-self: start;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Sticky navigation bar */
 .nav-menu {
   position: sticky;
   top: 0;
   /* left: 0; */
   background-color: white;
+}
+
+/* Footer */
+.footer {
+  justify-content: center;
+  font-weight: 400;
+  font-size: smaller;
+  color:#777
+  padding: 0;
 }
